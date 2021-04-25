@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send mail</title>
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="status" class="status">
+      <p id="status-text" class="status-text">Test</p>
+    </div>
+
+    <div class="form">
+      <p class="title">Send mail</p>
+
+      <form type="submit" method="POST" enctype="multipart/form-data">
+        <label class="form-label block" for="to">To</label>
+        <input
+          id="to"
+          class="form-input block"
+          type="email"
+          maxlength="50"
+          required
+        />
+
+        <label class="form-label block" for="subject">Subject</label>
+        <input
+          id="subject"
+          class="form-input block"
+          name="subject"
+          type="text"
+          placeholder=""
+          maxlength="50"
+          required
+        />
+
+        <label class="form-label block" for="text">Text</label>
+        <textarea
+          id="text"
+          class="form-input block"
+          name="text"
+          type="text"
+          placeholder=""
+          maxlength="255"
+          required
+          rows="5"
+        ></textarea>
+
+        <h4 id="info" class="info"></h4>
+
+        <button class="form-button" type="submit">Send</button>
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

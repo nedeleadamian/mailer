@@ -1,0 +1,90 @@
+* {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+
+body {
+  display: flex;
+  padding: 100px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.block {
+  display: block;
+}
+
+.form-label {
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+.form-input {
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  width: 300px;
+  color: rgb(66, 66, 66);
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.form-input:focus {
+  background-color: rgb(240, 240, 240);
+  outline: none;
+  transition: background-color 0.2s ease-in;
+}
+
+.form-button {
+  background-color: rgb(47, 90, 46);
+  border: none;
+  border-radius: 5px;
+  padding: 7px 20px;
+  font-size: 16px;
+}
+
+.file__button {
+  padding: 7px 20px;
+  background: rgb(116, 116, 116);
+  border: 1px solid rgb(116, 116, 116);
+  position: relative;
+  border-radius: 5px;
+  width: 70px;
+}
+
+.file__button--hidden {
+  position: absolute;
+  z-index: 1000;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.info {
+  font-weight: 100;
+}
+
+.status {
+  display: none;
+  background-color: rgb(240, 240, 240);
+  position: absolute;
+  top: 20px;
+  width: 30%;
+}
+
+.status-text {
+  margin: 0;
+  padding: 10px 40px;
+  text-align: center;
+}
